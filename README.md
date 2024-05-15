@@ -1,3 +1,6 @@
 # SportSync
 
-https://www.figma.com/file/Xx1GfdaTaXeywzThbOeUB1/Untitled?type=design&node-id=0%3A1&mode=dev&t=P6SCs8LtN1eOzCeR-1
+https://www.figma.com/file/zk6vQzBXHH9IGAk0etC7pz/SportSync?type=design&node-id=0%3A1&mode=dev&t=HCcETNYkCW1Yw4xj-1
+
+
+Trello : https://trello.com/b/bqo7r6aa/sportsync.
