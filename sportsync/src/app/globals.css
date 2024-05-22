@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    height: 60px;
+    width: 94%;
+}
+.head ul{
+    display: flex;
+    list-style:none;
+    align-items: center;
+
+}
+.head img{
+    height: 100%;
+    object-fit: cover;
+}
+.head p{
+    color: white;
+    background-color: black;
+    padding: 20px 200px;
+}
+.samen {
+    position: relative;
+
+}
+.span_een{
+    position: absolute;
+    background-color: white;
+    height: 132px;
+    transform: rotate(211deg);
+    width: 35px;
+    top: -46px;
+}
+.span_twee{
+    position: absolute;
+    background-color: white ;
+    height: 132px;
+    transform: rotate(211deg);
+    width: 55px;
+    top: -25px;
+    right: -17px;
+}
+.head_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin-top: 20px;
+}
+.head_list img{
+    margin-right: 269px;
+}
+.head_list ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+}
+
+.head_list ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.home_hero{
+    background-image: url(/homeimg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+.home_info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 100px 0px 0px 127px;
+}
+.home_info img{
+    width: 200px;
+} 
+.home_info h2{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    width: 600px;
+    margin-bottom: 0px;
+    
+}
+.home_info p{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    width: 600px;
+    margin-top: 10px;
+    padding: 0px;
+}
+.ontdekmeer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    padding: 5px 20px;
+    width: 120px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.ontdekmeer img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin-top: 3px;
+
+}
+.ontdekmeer p{
+    color: black;
+}
+
