@@ -47,3 +47,9 @@
     font-size: 1.1rem;
 
 }
+.icon-list-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+}

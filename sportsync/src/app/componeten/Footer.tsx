@@ -1,4 +1,4 @@
-import "../julian.css";
+
 export default function Footer() {
     return (
         <>
@@ -18,7 +18,13 @@ export default function Footer() {
                     </div>
                     <div className="bottom-footer">
                         <div className="bottom-left-footer">
-                            <div></div>
+                            <div>
+                            <ul className="icon-list-footer">
+                <li><img src="/tiktok.png" alt="tiktok" /></li>
+                <li><img src="/nsta.png" alt="tiktok" /></li>
+                <li><img src="/facebook.png" alt="tiktok" /></li>
+            </ul>
+                            </div>
                             <div className="corner"></div>
                         </div>
                         <div className="bottom-right-footer">
