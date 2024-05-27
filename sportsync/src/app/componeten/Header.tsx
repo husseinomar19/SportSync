@@ -2,7 +2,7 @@
 export default function Header(){
     return(
         <>
-        <header>
+        <header id="home_hero">
             <div className="head">
                 <img src="/logoklien.png" alt="logo" />
                 <div className="samen">
