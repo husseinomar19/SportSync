@@ -1,0 +1,55 @@
+.main-footer{
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: white;
+}
+.top-footer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5em 1.5em 6em 1.5em;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    font-size: 1.3rem;
+}
+.bottom-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    height: 10vh;
+}
+.bottom-left-footer{
+    width: 45%;
+    background-color: white;
+ height: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.corner{
+    clip-path: polygon(0 0, 102% 0, 100% 100%, 0 0); 
+    background-color: black;
+    width: 25%;
+}
+.bottom-right-footer{
+    width: 30%;
+
+}
+.copyright{
+    font-size: 1.1rem;
+
+}
+.icon-list-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+}
