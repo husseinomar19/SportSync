@@ -1,4 +1,4 @@
-
+import "../julian.css";
 export default function Footer() {
     return (
         <>

@@ -3,7 +3,7 @@ import Header from "./componeten/Header";
 import Footer from "./componeten/Footer";
 
 import "./globals.css";
-import "./julian.css";
+
 export default function Home() {
   return (
     <>

@@ -83,8 +83,10 @@ header{
     background-size: 100vw;
     background-position: center;
     height: 100vh;
+    width: 100vw;
 }
 .home_info{
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content:flex-start;
