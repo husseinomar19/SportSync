@@ -2,9 +2,9 @@
 export default function Header(){
     return(
         <>
-        <header>
+        <header id="home_hero">
             <div className="head">
-                <img src="/logoklien.png" alt="logo" />
+                <a href="/"><img src="/logoklien.png" alt="logo" /></a>
                 <div className="samen">
                 <p>Samen sporten, samen groeien!</p>
                 <span className="span_een"></span>
@@ -24,10 +24,10 @@ export default function Header(){
                     <li><a href="">Community</a></li>
                     <li><a href="">Support</a></li>
                 </ul>
-                <img src="/logo.png" alt="logo" />
+                <a href="/"><img src="/logo.png" alt="logo" /></a>
 
                    <ul>
-                    <li><a href="">Log In</a></li>
+                    <li><a href="inlog">Log In</a></li>
                     <li><a href="">Sign In </a></li>
                    </ul>
                </div>     
