@@ -20,7 +20,7 @@ export default function inlog() {
           <a href=""><Image src={google} alt="Google" /></a>
           <a href="">Wachtwoord vergeten?</a>
         </div>
-        <a href="">Geen account? Sign up</a>
+        <a href="maakAccound">Geen account? Sign up</a>
 
        </form>
     </div>
