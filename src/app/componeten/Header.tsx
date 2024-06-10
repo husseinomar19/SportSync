@@ -28,7 +28,7 @@ export default function Header(){
 
                    <ul>
                     <li><a href="inlog">Log In</a></li>
-                    <li><a href="maakAccound">Sign In </a></li>
+                    <li><a href="maakaccound">Sign In </a></li>
                    </ul>
                </div>     
         </header>
