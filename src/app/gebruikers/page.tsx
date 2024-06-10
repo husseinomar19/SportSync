@@ -12,7 +12,7 @@ export default function Gebruiker(){
                 </div>
               <div className="header_user">
                   <a href=""><img src="/chat.png" alt="" /></a>
-                  <a href=""><img src="/posten_img.png" alt="" /></a>
+                  <a href="/posten"><img src="/posten_img.png" alt="" /></a>
 
                    <div className="user_titel">
                     <h4>Hussein Omar</h4>
