@@ -1,20 +1,32 @@
+"use client"
+import { useState, useEffect } from 'react';
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
-export default function Header(){
-    return(
-        <>
+export default function Header() {
+    const [isauth, setAuth] = useState(false);
+
+    useEffect(() => {
+        const token = cookies.get("user_token");
+        if (token) {
+            setAuth(true);
+        }
+    }, []);
+
+    return (
         <header id="home_hero">
             <div className="head">
                 <a href="/"><img src="/logoklien.png" alt="logo" /></a>
                 <div className="samen">
-                <p>Samen sporten, samen groeien!</p>
-                <span className="span_een"></span>
-                <span className="span_twee"></span>
+                    <p>Samen sporten, samen groeien!</p>
+                    <span className="span_een"></span>
+                    <span className="span_twee"></span>
                 </div>
-            <ul>
-                <li><img src="/tiktok.png" alt="tiktok" /></li>
-                <li><img src="/nsta.png" alt="tiktok" /></li>
-                <li><img src="/facebook.png" alt="tiktok" /></li>
-            </ul>
+                <ul>
+                    <li><img src="/tiktok.png" alt="tiktok" /></li>
+                    <li><img src="/nsta.png" alt="instagram" /></li>
+                    <li><img src="/facebook.png" alt="facebook" /></li>
+                </ul>
             </div>
 
             <div className="head_list">
@@ -25,13 +37,17 @@ export default function Header(){
                     <li><a href="">Support</a></li>
                 </ul>
                 <a href="/"><img src="/logo.png" alt="logo" /></a>
-
-                   <ul>
-                    <li><a href="inlog">Log In</a></li>
-                    <li><a href="maakAccound">Sign In </a></li>
-                   </ul>
-               </div>     
+                <ul>
+                    {!isauth ? (
+                        <>
+                            <li><a href="/inlog">Log In</a></li>
+                            <li><a href="/maakaccound">Sign In</a></li>
+                        </>
+                    ) : (
+                        <li><a href="/gebruikers">Mijn Sportsync</a></li>
+                    )}
+                </ul>
+            </div>
         </header>
-        </>
-    )
+    );
 }
