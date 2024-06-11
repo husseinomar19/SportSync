@@ -7,7 +7,10 @@ import {auth , provider} from '../../../src/firebase';
 import {signInWithPopup} from 'firebase/auth';
 import { FormEvent} from 'react';
 import { useRouter } from 'next/navigation';
+import Cookies from 'universal-cookie';
 
+
+const cookies = new Cookies();
 
 
 
@@ -17,12 +20,16 @@ export default function inlog() {
   //Form event handler
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
+
   };
   //Gooegle popup form 
    const handleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
       console.log(result);
+      cookies.set('user_token',result.user.refreshToken);
+      cookies.set('user_naam',result.user.displayName);
+      cookies.set('user-img',result.user.photoURL);
       router.push('/gebruikers'); 
     //  return result.user;
     } catch (error) {

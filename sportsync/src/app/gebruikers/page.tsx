@@ -1,10 +1,33 @@
 'use client';
+import { auth } from '@/firebase';
+import { useState, useEffect } from 'react';
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
+
+
+
 export default function Gebruiker(){
+    const [isauth, setAuth] = useState(false);
+
+const [userNaam, setUserNaam] = useState('');
+const [userImg, setUserImg] = useState('');
+
+useEffect(() => {
+  const tokenNaam = cookies.get("user_naam");
+  const userImg = cookies.get("user-img"); 
+  const token = cookies.get("user_token"); // Corrected cookie name
+
+  if (token) {
+    setUserNaam(tokenNaam);
+    setUserImg(userImg);
+    setAuth(true);
+  }
+}, []);
     return(
         <>
         <header id="home_hero">
             <div className="head">
-                 <img src="/usericon.png" alt="zoeken" />
+                 <img src="/logoklien.png" alt="zoeken" />
                 <div className="samen">
                 <p>Samen sporten, samen groeien!</p>
                 <span className="span_een"></span>
@@ -15,8 +38,15 @@ export default function Gebruiker(){
                   <a href=""><img src="/posten_img.png" alt="" /></a>
 
                    <div className="user_titel">
-                    <h4>Hussein Omar</h4>
-                    <img src="usericon.png" alt="User" />
+                   {isauth ? (
+                        <>
+                            <h4>{userNaam}</h4>
+                            <img className='user_inlog_img' src={userImg} alt="User" />
+                        </>
+                        ) : (
+                            <h4>Not logged in</h4>
+                        )}
+   
                    </div>
               </div>
             </div>
